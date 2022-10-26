@@ -1,7 +1,7 @@
 import time
 ##
 
-alpha = "abcdefghijklmnopqrstuvwxyz 0123456789&é'(-è_çà)=^$ù*,;:!¨£%µ?./§" ##the aplha
+alpha = "abcdefghijklmnopqrstuvwxyz 0123456789&é'(-è_çà)=^$ù*,;:?¨£%µ!./§" ##the aplha
 key = "qeyfmchoganlujxwbtkrzbvips 0123456789&é'(-è_çà)=^$ù*,;:!¨£%µ?./§"   ##the alpha key
 keyList = [""]
 alphaList = [""]
@@ -78,4 +78,3 @@ while cryptOrDecrypt != "q":
         time.sleep(2.5)
 
 print("\n\n\t\t\tAu revoir\n\n\n")
-
