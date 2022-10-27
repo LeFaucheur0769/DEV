@@ -1,8 +1,8 @@
 import time
 ##
 
-alpha = "abcdefghijklmnopqrstuvwxyz 0123456789&é'(-è_çà)=^$ù*,;:?¨£%µ!./§" ##the aplha
-key = "qeyfmchoganlujxwbtkrzbvips 0123456789&é'(-è_çà)=^$ù*,;:!¨£%µ?./§"   ##the alpha key
+alpha = "abcdefghijklnmopqrstuvwxyz ?!&é(-è_çà)=<>123456789^$ù*0.°+~#{[|`@},;:§%¨£µ¤/ïëüêîûñ" ##the aplha
+key = "qeyfmchoganljuxwdtkrzbvips !?&é(-è_çà)=<>123456789^$ù*0.°+~#{[|`@},;:§%¨£µ¤/ïëüêîûñ"   ##the alpha key
 keyList = [""]
 alphaList = [""]
 
