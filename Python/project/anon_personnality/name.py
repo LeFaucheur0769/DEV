@@ -41,6 +41,12 @@ while exitLoop == False:
                 else:
                     writeOrAppend = "a"
                     temp_name(filePath, writeOrAppend)
+            elif storeFile == "n":
+                print("\n")
+                print(names.get_full_name() + "\n\n")
+            else:
+                pass
+
         elif storeFile == "exit":
             exitLoop = True
             print("\n\n\t\t Good bye\n\n")
