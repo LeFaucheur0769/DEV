@@ -12,6 +12,8 @@ import time
 gender = ""
 storeFile = "n"
 exitLoop = False
+filePath = ""
+writeOrAppend = ""
 
 ###
 print("\033[H\033[J")
@@ -19,8 +21,10 @@ while exitLoop == False:
     try:
         storeFile = input("\tWould you store your new name (y/n) : ").lower()
         if storeFile == "y" or storeFile == "n":
-            print(names.get_full_name(gender=gender))
-            print(storeFile)
+            if storeFile == "y":
+                filePath = input("Where would you store your results : ")
+                writeOrAppend = input("By default, it will ")
+                save = open(filePath, "a")
         elif storeFile == "exit":
             exitLoop = True
             print("\n\n\t\t Good bye\n\n")
