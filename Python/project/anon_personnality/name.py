@@ -16,6 +16,19 @@ filePath = ""
 writeOrAppend = ""
 
 ###
+
+def temp_name():
+    ifTrue = True
+    while ifTrue == False:
+        howMany = input("How many name do you want : ")
+        if howMany.isnumeric() == True:
+            for i in howMany:
+                name = names.get_full_name()
+                save.write(name)
+            ifTrue = True
+        else:
+            print("Please a numeric value !!")
+
 print("\033[H\033[J")
 while exitLoop == False:
     try:
@@ -23,8 +36,13 @@ while exitLoop == False:
         if storeFile == "y" or storeFile == "n":
             if storeFile == "y":
                 filePath = input("Where would you store your results : ")
-                writeOrAppend = input("By default, it will ")
-                save = open(filePath, "a")
+                writeOrAppend = input(" a to append and w to wipe and write, by default it's a : ").lower()
+                if writeOrAppend == "w":
+                    save = open(filePath, writeOrAppend)
+                    temp_name()
+                else:
+                    save = open(filePath, "a")
+                    temp_name()
         elif storeFile == "exit":
             exitLoop = True
             print("\n\n\t\t Good bye\n\n")
